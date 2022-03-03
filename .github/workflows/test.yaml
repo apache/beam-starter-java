@@ -1,0 +1,42 @@
+name: Test
+
+on: push
+
+jobs:
+  Gradle:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+        cache: 'gradle'
+    - run: gradle assemble --info
+    - run: gradle test --info
+    - run: java -jar build/pipeline.jar --inputText="🎉"
+
+  sbt:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+    - run: sbt -v 'Test / compile' assembly
+    - run: sbt -v test
+    - run: java -jar build/pipeline.jar --inputText="🎉"
+
+  Maven:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+        cache: 'maven'
+    - run: mvn -DskipTests test-compile package
+    - run: mvn test
+    - run: java -jar target/beam-java-starter-1-jar-with-dependencies.jar --inputText="🎉"

@@ -1,0 +1,43 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'com.example.App'
+}
+
+test {
+    // JUnit 5 testing integration.
+    useJUnitPlatform()
+}
+
+def beamVersion = '2.33.0'
+dependencies {
+    // App dependencies.
+    implementation "org.apache.beam:beam-sdks-java-core:${beamVersion}"
+    implementation "org.apache.beam:beam-runners-direct-java:${beamVersion}"
+    implementation "org.slf4j:slf4j-jdk14:1.7.32"
+
+    // Tests dependencies.
+    testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
+}
+
+// Package a self-contained jar file.
+jar {
+    baseName = 'pipeline'
+    destinationDirectory = file('build')
+    manifest {
+        attributes 'Main-Class': 'com.example.App'
+    }
+    exclude 'META-INF/*.SF'
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
