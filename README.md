@@ -1,5 +1,10 @@
 # Apache Beam starter for Java
 
+ℹ️ This repository is dual licensed on both [Apache ASL2](LICENSE-APACHE) and [MIT](LICENSE-MIT) licenses.
+
+If you want to clone this repository to start your own project,
+you can choose the license you prefer and feel free to delete anything related to the license you are dropping.
+
 ## Before you begin
 
 Make sure you have a [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) development environment ready.
@@ -147,3 +152,10 @@ To keep this template small, it only includes the [Direct Runner](https://beam.a
 For a comparison of what each runner currently supports, look at the [Beam Capability Matrix](https://beam.apache.org/documentation/runners/capability-matrix/).
 
 To add a new runner, visit the runner's page for instructions on how to include it.
+
+## Contributing
+
+Thank you for your interest in contributing!
+All contributions are welcome! 🎉🎊
+
+Please refer to the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for more information.
