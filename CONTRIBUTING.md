@@ -2,9 +2,6 @@
 
 🎉🎊 Thanks for taking the time to contribute! 🎉🎊
 
-> ℹ️ Please note that this repository is licensed by both [Apache ASL2](LICENSE-APACHE) and [MIT](LICENSE-MIT) licenses to allow users choose the license they prefer.
-> Both licenses apply to all contributions made to this repository.
-
 There are many ways to contribute, here are some.
 
 ## Filing an issue
