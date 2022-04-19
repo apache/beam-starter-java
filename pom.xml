@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright 2022 Google LLC
+
+  Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+  https://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+  <LICENSE-MIT or https://opensource.org/licenses/MIT>, at your
+  option. This file may not be copied, modified, or distributed
+  except according to those terms.
+ -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>

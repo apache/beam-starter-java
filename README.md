@@ -1,7 +1,5 @@
 # Apache Beam starter for Java
 
-ℹ️ This repository is dual licensed on both [Apache ASL2](LICENSE-APACHE) and [MIT](LICENSE-MIT) licenses.
-
 If you want to clone this repository to start your own project,
 you can choose the license you prefer and feel free to delete anything related to the license you are dropping.
 
@@ -159,3 +157,10 @@ Thank you for your interest in contributing!
 All contributions are welcome! 🎉🎊
 
 Please refer to the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for more information.
+
+# License
+
+This software is distributed under the terms of both the MIT license and the
+Apache License (Version 2.0).
+
+See [LICENSE](LICENSE) for details.
