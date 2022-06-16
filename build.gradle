@@ -19,11 +19,11 @@ application {
 }
 
 test {
-    // JUnit 5 testing integration.
-    useJUnitPlatform()
+    // JUnit 4.
+    useJUnit()
 }
 
-def beamVersion = '2.33.0'
+def beamVersion = '2.39.0'
 dependencies {
     // App dependencies.
     implementation "org.apache.beam:beam-sdks-java-core:${beamVersion}"
@@ -31,7 +31,8 @@ dependencies {
     implementation "org.slf4j:slf4j-jdk14:1.7.32"
 
     // Tests dependencies.
-    testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation 'org.hamcrest:hamcrest:2.2'
 }
 
 // Package a self-contained jar file.
