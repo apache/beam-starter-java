@@ -21,8 +21,8 @@
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <beam.version>2.33.0</beam.version>
-    <junit.version>5.8.1</junit.version>
+    <beam.version>2.39.0</beam.version>
+    <junit.version>4.13.2</junit.version>
   </properties>
 
   <build>
@@ -44,18 +44,11 @@
         </configuration>
       </plugin>
 
-      <!-- JUnit 5 testing integration. -->
+      <!-- JUnit 4 testing integration. -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-          </dependency>
-        </dependencies>
       </plugin>
 
       <!-- Package self-contained jar file. -->
@@ -108,9 +101,16 @@
 
     <!-- Test dependencies -->
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
       <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>2.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

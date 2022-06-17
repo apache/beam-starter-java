@@ -8,7 +8,7 @@
 
 mainClass := Some("com.example.App")
 
-val beamVersion = "2.33.0"
+val beamVersion = "2.39.0"
 libraryDependencies ++= Seq(
   // App dependencies.
   "org.apache.beam" % "beam-sdks-java-core" % beamVersion,
@@ -16,8 +16,9 @@ libraryDependencies ++= Seq(
   "org.slf4j" % "slf4j-jdk14" % "1.7.32",
 
   // Test dependencies.
-  "net.aichler" % "jupiter-interface" % JupiterKeys.jupiterVersion.value % Test,
-  "org.junit.jupiter" % "junit-jupiter" % "5.8.1" % Test
+  "junit" % "junit" % "4.13.2" % Test,
+  "com.novocode" % "junit-interface" % "0.11" % Test,
+  "org.hamcrest" % "hamcrest" % "2.2" % Test
 )
 
 // Package self-contained jar file.
