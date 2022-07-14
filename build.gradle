@@ -23,7 +23,7 @@ test {
     useJUnit()
 }
 
-def beamVersion = '2.39.0'
+def beamVersion = '2.40.0'
 dependencies {
     // App dependencies.
     implementation "org.apache.beam:beam-sdks-java-core:${beamVersion}"
