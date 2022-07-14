@@ -21,7 +21,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <beam.version>2.39.0</beam.version>
+    <beam.version>2.40.0</beam.version>
     <junit.version>4.13.2</junit.version>
   </properties>
 
