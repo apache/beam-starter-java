@@ -48,7 +48,7 @@ A basic Gradle setup consists of a [`build.gradle`](build.gradle) file written i
 gradle run
 
 # To run passing command line arguments.
-gradle run -Pargs=--inputText="🎉"
+gradle run --args=--inputText="🎉"
 
 # To run the tests.
 gradle test --info
