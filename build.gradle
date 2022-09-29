@@ -28,7 +28,7 @@ dependencies {
     // App dependencies.
     implementation "org.apache.beam:beam-sdks-java-core:${beamVersion}"
     implementation "org.apache.beam:beam-runners-direct-java:${beamVersion}"
-    implementation "org.slf4j:slf4j-jdk14:1.7.32"
+    implementation "org.slf4j:slf4j-jdk14:2.0.3"
 
     // Tests dependencies.
     testImplementation "junit:junit:4.13.2"
