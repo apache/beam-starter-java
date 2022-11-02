@@ -12,11 +12,23 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - lukecwik
+      - kennknowles
+      - robertwb
+      - kileys
+      - apilloud
 
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - lukecwik
+      - kennknowles
+      - robertwb
+      - kileys
+      - apilloud
 
   # SBT is not yet supported: https://github.com/dependabot/dependabot-core/issues/352
 
@@ -24,3 +36,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - lukecwik
+      - kennknowles
+      - robertwb
+      - kileys
+      - apilloud
