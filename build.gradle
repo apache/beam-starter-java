@@ -23,11 +23,10 @@ test {
     useJUnit()
 }
 
-def beamVersion = '2.42.0'
 dependencies {
     // App dependencies.
-    implementation "org.apache.beam:beam-sdks-java-core:${beamVersion}"
-    implementation "org.apache.beam:beam-runners-direct-java:${beamVersion}"
+    implementation "org.apache.beam:beam-sdks-java-core:2.42.0"
+    implementation "org.apache.beam:beam-runners-direct-java:2.42.0"
     implementation "org.slf4j:slf4j-jdk14:1.7.32"
 
     // Tests dependencies.
