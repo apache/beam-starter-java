@@ -18,7 +18,7 @@ jobs:
     - uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
-        java-version: '11'
+        java-version: '17'
         cache: 'gradle'
     - run: gradle assemble --info
     - run: gradle test --info
@@ -31,7 +31,7 @@ jobs:
     - uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
-        java-version: '11'
+        java-version: '17'
     - run: sbt -v 'Test / compile' assembly
     - run: sbt -v test
     - run: java -jar build/pipeline.jar --inputText="🎉"
@@ -43,7 +43,7 @@ jobs:
     - uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
-        java-version: '11'
+        java-version: '17'
         cache: 'maven'
     - run: mvn -DskipTests test-compile package
     - run: mvn test

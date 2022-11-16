@@ -8,16 +8,12 @@ you can choose the license you prefer and feel free to delete anything related t
 Make sure you have a [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29) development environment ready.
 If you don't, an easy way to install it is with [`sdkman`](https://sdkman.io).
 
-> ℹ️ Apache Beam currently only supports Java 8 (LTS) and Java 11 (LTS).
->
-> ⚠️ **[Java 8 ends its active support in March 2022](https://endoflife.date/java)**, so we recommend using Java 11 (LTS) until Java 17 (LTS) is supported.
-
 ```sh
 # Install sdkman.
 curl -s "https://get.sdkman.io" | bash
 
-# Make sure you have Java 11 installed.
-sdk install java 11.0.12-tem
+# Make sure you have Java 17 installed.
+sdk install java 17.0.5-tem
 ```
 
 ## Source file structure
@@ -31,7 +27,7 @@ There are only two source files:
 
 > ℹ️ Most build tools expect all the Java source files to be under `src/main/java/` and tests to be under `src/test/java/` by default.
 
-### Option A: Gradle
+### Option A: Gradle _(recommended)_
 
 [Gradle](https://gradle.org) is a build tool focused on flexibility and performance.
 
@@ -98,7 +94,7 @@ sbt assembly
 java -jar build/pipeline.jar --inputText="🎉"
 ```
 
-### Option C: Apache Maven _(not recommended)_
+### Option C: Apache Maven
 
 [Apache Maven](http://maven.apache.org) is a project management and comprehension tool based on the concept of a project object model (POM).
 
