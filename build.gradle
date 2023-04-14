@@ -25,8 +25,8 @@ test {
 
 dependencies {
     // App dependencies.
-    implementation "org.apache.beam:beam-sdks-java-core:2.45.0"
-    implementation "org.apache.beam:beam-runners-direct-java:2.44.0"
+    implementation "org.apache.beam:beam-sdks-java-core:2.46.0"
+    implementation "org.apache.beam:beam-runners-direct-java:2.46.0"
     implementation "org.slf4j:slf4j-jdk14:1.7.32"
 
     // Tests dependencies.
@@ -36,7 +36,7 @@ dependencies {
 
 // Package a self-contained jar file.
 jar {
-    baseName = 'pipeline'
+    archiveBaseName = 'pipeline'
     destinationDirectory = file('build')
     manifest {
         attributes 'Main-Class': 'com.example.App'
