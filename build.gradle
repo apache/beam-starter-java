@@ -36,7 +36,7 @@ dependencies {
 
 // Package a self-contained jar file.
 jar {
-    baseName = 'pipeline'
+    archiveBaseName = 'pipeline'
     destinationDirectory = file('build')
     manifest {
         attributes 'Main-Class': 'com.example.App'
