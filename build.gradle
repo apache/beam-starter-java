@@ -26,7 +26,7 @@ test {
 dependencies {
     // App dependencies.
     implementation "org.apache.beam:beam-sdks-java-core:2.46.0"
-    implementation "org.apache.beam:beam-runners-direct-java:2.46.0"
+    implementation "org.apache.beam:beam-runners-direct-java:2.49.0"
     implementation "org.slf4j:slf4j-jdk14:1.7.32"
 
     // Tests dependencies.
