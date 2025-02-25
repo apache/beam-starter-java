@@ -32,6 +32,8 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '17'
+    - name: Setup sbt launcher
+      uses: sbt/setup-sbt@v1
     - run: sbt -v 'Test / compile' assembly
     - run: sbt -v test
     - run: java -jar build/pipeline.jar --inputText="🎉"
