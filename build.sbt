@@ -8,7 +8,7 @@
 
 mainClass := Some("com.example.App")
 
-val beamVersion = "2.61.0"
+val beamVersion = "2.64.0"
 libraryDependencies ++= Seq(
   // App dependencies.
   "org.apache.beam" % "beam-sdks-java-core" % beamVersion,
@@ -24,6 +24,8 @@ libraryDependencies ++= Seq(
 // Package self-contained jar file.
 assembly / assemblyOutputPath := file("build/pipeline.jar")
 assembly / assemblyMergeStrategy := {
+  // Handle the specific conflict for public-suffix-list.txt
+  case PathList("mozilla", "public-suffix-list.txt") => MergeStrategy.first
   case PathList("META-INF")      => MergeStrategy.discard
   case x if x.endsWith(".class") => MergeStrategy.first
   case x                         => (assembly / assemblyMergeStrategy).value(x)
