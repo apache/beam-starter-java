@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   // App dependencies.
   "org.apache.beam" % "beam-sdks-java-core" % beamVersion,
   "org.apache.beam" % "beam-runners-direct-java" % beamVersion,
-  "org.apache.beam" % "beam-vendor-grpc-1_69_0" % "0.1" exclude("mozilla", "public-suffix-list.txt"),
+  "org.apache.beam" % "beam-vendor-grpc-1_69_0" % "0.1" exclude("org.mozilla", "public-suffix-list.txt"),
   "org.slf4j" % "slf4j-jdk14" % "1.7.32",
   "org.apache.httpcomponents" % "httpclient" % "4.5.13" exclude("org.apache.beam", "beam-vendor-grpc-1_69_0"),
 
