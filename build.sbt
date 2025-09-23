@@ -8,7 +8,7 @@
 
 mainClass := Some("com.example.App")
 
-val beamVersion = "2.67.0"
+val beamVersion = "2.68.0"
 libraryDependencies ++= Seq(
   // App dependencies.
   "org.apache.beam" % "beam-sdks-java-core" % beamVersion,
